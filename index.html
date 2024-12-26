@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ANIMATION_PORTFOLIO</title>
     <link rel="stylesheet" href="./src/css/output.css" />
-    
   </head>
   <body class="bg-black text-white">
     <!-- nav bar Start -->
-    <nav class="py-4">
+    <nav class="py-4 ">
       <div class="max-w-7wl mx-auto px-4">
         <div class="flex justify-between items-center">
           <!-- LOGO -->
@@ -23,19 +22,29 @@
           <!-- logo end -->
           <!-- desktop Navigation start -->
           <div class="hidden md:flex gap-8 mx-4 items-center">
-            <a href="#" class="text-white text-sm lg:text-nm font-space-grotesk"
+            <a
+              href="#"
+              class="text-white text-sm lg:text-nm font-space-grotesk underline-link"
               >About us</a
             >
-            <a href="#" class="text-white font-space-grotesk text-sm lg:text-nm"
+            <a
+              href="#"
+              class="text-white font-space-grotesk text-sm lg:text-nm underline-link"
               >Services</a
             >
-            <a href="#" class="text-white font-space-grotesk text-sm lg:text-nm"
+            <a
+              href="#"
+              class="text-white font-space-grotesk text-sm lg:text-nm underline-link"
               >Use Cases</a
             >
-            <a href="#" class="text-white font-space-grotesk text-sm lg:text-nm"
+            <a
+              href="#"
+              class="text-white font-space-grotesk text-sm lg:text-nm underline-link"
               >Pricing</a
             >
-            <a href="#" class="text-white font-space-grotesk text-sm lg:text-nm"
+            <a
+              href="#"
+              class="text-white font-space-grotesk text-sm lg:text-nm underline-link"
               >Blog</a
             >
             <a
@@ -44,9 +53,87 @@
               >Request a quote</a
             >
           </div>
+          <!-- desktop Navigation end -->
+          <!-- mobile Navigation start -->
+          <div class="md:hidden">
+            <!-- menu button -->
+            <button id="mobile-menu-button" class="mx-4 p-3">
+              <!-- Menu Icon -->
+              <svg
+                id="menu-icon"
+                class="h-10 w-10 transition-transform duration-300"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="#ff6700"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+
+              <!-- Close Icon -->
+              <svg
+                id="close-icon"
+                class="hidden h-10 w-10 transition-transform duration-300"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="#ff6700"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- mobile Navigation end -->
+        <!-- mobile Menu -->
+        <div id="mobile-menu" class="hidden opacity-0 transform -translate-y-5 transition-all duration-300 ease-in-out"> 
+            <div class="flex flex-col px-3 gap-4">
+              <a
+                href="#"
+                class="inline-block text-white text-nm  font-space-grotesk hover:text-orange transition-all duration-300"
+                >About us</a
+              >
+              <a
+                href="#"
+                class="inline text-white font-space-grotesk text-nm  hover:text-orange transition-all duration-300"
+                >Services</a
+              >
+              <a
+                href="#"
+                class="text-white font-space-grotesk text-nm  hover:text-orange transition-all duration-300"
+                >Use Cases</a
+              >
+              <a
+                href="#"
+                class="text-white font-space-grotesk text-nm hover:text-orange transition-all duration-300"
+                >Pricing</a
+              >
+              <a
+                href="#"
+                class="text-white font-space-grotesk text-nm  hover:text-orange transition-all duration-300"
+                >Blog</a
+              >
+              <a
+                href="#"
+                class="quote-button text-nm font-space-grotesk px-6 py-4 border border-white relative rounded-2xl flex items-center justify-center text-center"
+                >Request a quote</a>
+
+            </div>
         </div>
       </div>
     </nav>
     <!-- nav bar End -->
+
+    <!-- part of script -->
+    <script src="./src/js/script.js"></script>
+    <script src="./src/js/mobile-menu.js"></script>
   </body>
 </html>

@@ -11,6 +11,9 @@ module.exports = {
         "2xs": ".625rem",
         "3xs": ".5rem",
       },
+      colors: {
+        "orange": "#ff6700",
+      }
     },
   },
   plugins: [],
