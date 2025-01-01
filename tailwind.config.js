@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         "space-grotesk": ["Space Grotesk", "sans-serif"],
+        'roboto':['"Roboto"','serif'],
       },
       fontSize: {
         "nm": '20px',
@@ -13,7 +14,11 @@ module.exports = {
       },
       colors: {
         "orange": "#ff6700",
-      }
+        'custom_orange':'#FF6700',
+        'custom_white':'#F3F3F3',
+        'custom_peach' : '#FFE9DA',
+      },
+      
     },
   },
   plugins: [],

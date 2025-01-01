@@ -57,5 +57,48 @@
   transition: width 0.1s ease-out;
 }
 
-/* for mobile menu */
+/* for about us button */
+/* Base button styling */
+.custom-btn {
+  position: relative;
+  font-family: inherit;
+  font-weight: 500;
+  
+  overflow: hidden;
+  background: transparent;
+  color: #ff6700; /* Matches your orange */
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* Border animation effect */
+.custom-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #f85413e2, #f83d0e, #ff6700); /* Gradient for hover */
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+  border-radius: inherit; /* Matches button rounding */
+}
+
+/* Hover effect */
+.custom-btn:hover::before {
+  transform: scaleX(1); /* Expands the gradient background */
+}
+
+.custom-btn:hover {
+  color: #fff; /* Change text color on hover */
+}
+
+/* Active state */
+.custom-btn:active {
+  transform: scale(0.95); /* Slight shrink effect on click */
+}
 
