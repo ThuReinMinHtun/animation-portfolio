@@ -6,6 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 
 /* Custom CSS */
+
 /* button animation */
 .quote-button {
   cursor: pointer;
@@ -102,3 +103,30 @@
   transform: scale(0.95); /* Slight shrink effect on click */
 }
 
+.accordion-content {
+  transition: all 100ms ease-in-out;
+  height: 0;
+  overflow: hidden;
+}
+
+.accordion-item button {
+  transition: all 0.3s ease-in-out;
+  border-radius: 30px;
+}
+
+.accordion-item button.active {
+  background-color: #ff4d00;
+  
+  border-radius: 30px 30px 0 0;
+}
+
+.accordion-content {
+  background-color: #ff4d00;
+  margin-top: -1px;
+  border-radius: 0 0 30px 30px;
+  transition: height 0.3s ease-in-out;
+}
+
+.v-line {
+  transition: opacity 0.3s ease-in-out;
+}
